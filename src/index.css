@@ -47,26 +47,40 @@ h2 {
 }
 
 .button {
-  /* border: 2px solid #ff6b6b;  /* Softer red */
-  font-size: 10px;
-  background-color: transparent;
-  color: white;
+  /* Remove all button defaults */
+  border: none;
+  outline: none;
+  background: none;
+  
+  /* Heart styling */
+  font-size: 32px;        /* Bigger heart */
+  line-height: 1;
   cursor: pointer;
-    /* Right alignment */
+  
+  /* Positioning */
   align-self: flex-end;
-    /* Better button styling */
-  padding: 8px 24px;
-  border-radius: 10px;  /* Rounded pill shape */
-  font-weight: 300;
-  transition: all 0.3s ease;
+  
+  /* Make it easier to click */
+  padding: 10px 15px;
+  margin: -5px;           /* Negative margin to compensate for padding */
+  
+  /* Smooth transitions */
+  transition: transform 0.2s ease;
+  
+  /* Remove any default button text styling */
+  font-family: inherit;
+  font-weight: normal;
+  text-decoration: none;
 }
 
 .button:hover {
-  background-color: #ff6b6b;
-  color: #151515;
-  transform: scale(1.05);  /* Slight grow effect */
+  transform: scale(1.2);
 }
 
 .button:active {
-  transform: scale(0.95);  /* Slight shrink when clicked */
+  transform: scale(0.9);
+}
+/* Optional: Add a subtle glow effect */
+.button:active {
+  text-shadow: 0 0 10px rgba(255, 59, 59, 0.5);
 }

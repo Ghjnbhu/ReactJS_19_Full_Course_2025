@@ -33,24 +33,8 @@
   }
 }
 
-.card {
-  border: 1px solid #4b5362;
-  padding: 20px;
-  margin: 10px;
-  background-color: #31363f;
-  border-radius: 10px;
-  min-height: 100px;
-}
-
 .read-the-docs {
   color: #888;
-}
-
-.cards-container {
-  display: flex;
-  flex-direction: column;  /* Stack vertically */
-  gap: 1rem;               /* Add space between cards */
-  align-items: center;     /* Center cards horizontally */
 }
 
 .card-item {
@@ -61,3 +45,4 @@
   border-radius: 8px;       /* Optional: rounded corners */
   background-color: #333;   /* Optional: background color */
 }
+
